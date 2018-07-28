@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1608</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Rule</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>531</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>13</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;● 주어진 자음을 이용해 단어를 만들면 됩니다.&lt;/p&gt;&lt;p&gt;● 단어는 일반명사만 가능하며, 동사의 명사형이나 고유명사는 안 됩니다.&lt;/p&gt;&lt;p&gt;● 초성뿐만 아니라 &lt;span style=&quot; font-weight:600;&quot;&gt;받침도 주어진 자음 안&lt;/span&gt;에서 써야 합니다.&lt;/p&gt;&lt;p&gt;● &lt;span style=&quot; font-weight:600;&quot;&gt;겹받침, 쌍자음의 경우 분리&lt;/span&gt;해서 생각하세요.&lt;/p&gt;&lt;p&gt;ex) 주어진 자음에 ㄱ이 2개, ㄴ, ㅎ이 있다면 '낂' 가능&lt;/p&gt;&lt;p&gt;● 모음은 자유롭게 사용 가능합니다.&lt;/p&gt;&lt;p&gt;● 자음, 모음마다 점수가 다릅니다. 옆의 점수표를 확인하세요.&lt;/p&gt;&lt;p&gt;● 다양한 추가 점수가 있습니다. 옆의 점수표를 확인하세요.&lt;/p&gt;&lt;p&gt;● 단어 목록은 국립국어원에서 가져왔습니다. 없는 단어가 있다면 제보 주세요.&lt;/p&gt;&lt;p&gt;● 자음/모음별 점수 기준은 20 - (사용 빈도 %값)입니다.&lt;/p&gt;&lt;p&gt;%값은 목록에 있는 단어만으로 측정한 것입니다.&lt;/p&gt;&lt;p&gt;● 글자 수별 점수 기준은 30 - (%값)입니다. (1, 2, 3 제외)&lt;/p&gt;&lt;p&gt;● 점수는 소수점 첫째 자리에서 반올림해서 정수로 표기됩니다.&lt;/p&gt;&lt;p&gt;● 시간은 기본적으로 5분이며, 설정에서 변경 가능합니다.&lt;/p&gt;&lt;p&gt;● 자모음의 점수는 설정에서 변경 가능합니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>130</y>
+     <width>71</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>13</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㄱ&lt;/span&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㄴ&lt;/span&gt;: 8.7&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㄷ&lt;/span&gt;: 14.5&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㄹ&lt;/span&gt;: 10.6&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅁ&lt;/span&gt;: 12.3&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅂ&lt;/span&gt;: 12.8&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅅ&lt;/span&gt;: 10.5&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅇ&lt;/span&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅈ&lt;/span&gt;: 12.8&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅊ&lt;/span&gt;: 19.7&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅋ&lt;/span&gt;: 19.7&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅌ&lt;/span&gt;: 18.6&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅍ&lt;/span&gt;: 18.4&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅎ&lt;/span&gt;: 17.4&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>130</y>
+     <width>111</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>13</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;[점수 높은 순]&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅊ/ㅋ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅌ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅍ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅎ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㄷ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅂ/ㅈ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅁ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㄹ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅅ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㄴ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㄱ/ㅇ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>80</y>
+     <width>71</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>13</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;ㅏ&lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;: -0.3&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅐ&lt;/span&gt;: 13.7&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅑ&lt;/span&gt;: 19&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;ㅒ&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: 20&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅓ&lt;/span&gt;: 10.5&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅔ&lt;/span&gt;: 17.8&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅕ&lt;/span&gt;: 14.5&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅖ&lt;/span&gt;: 19.1&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅗ&lt;/span&gt;: 7.3&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅘ&lt;/span&gt;: 17.5&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅙ&lt;/span&gt;: 19.8&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅚ&lt;/span&gt;: 19&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅛ&lt;/span&gt;: 18.7&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅜ&lt;/span&gt;: 8.3&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅝ&lt;/span&gt;: 19.2&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅞ&lt;/span&gt;: 19.9&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅟ&lt;/span&gt;: 19.1&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅠ&lt;/span&gt;: 18.7&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅡ&lt;/span&gt;: 14.6&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅢ&lt;/span&gt;: 19.4&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅣ&lt;/span&gt;: 14.6&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>80</y>
+     <width>101</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>13</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;[점수 높은 순]&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅒ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅞ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅙ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅢ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅝ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅖ/ㅟ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅑ/ㅚ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅛ/ㅠ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅔ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅘ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅡ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅕ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅐ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅓ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅜ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅗ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅣ&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;ㅏ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>10</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>25</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;[점수표]&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>-10</y>
+     <width>20</width>
+     <height>791</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>80</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>17</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;[자음]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>10</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>17</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;[모음]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>1310</x>
+     <y>30</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>17</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;[추가 점수]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>110</y>
+     <width>531</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔바른고딕 Light</family>
+     <pointsize>13</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;● 글자 수&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;1/2/3&lt;/span&gt;: -&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;4&lt;/span&gt;: 8.1&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;5&lt;/span&gt;: 23.3&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;6&lt;/span&gt;: 27.5&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;7&lt;/span&gt;: 29&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;8&lt;/span&gt;: 29.6&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;9&lt;/span&gt;: 29.9&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;10≤&lt;/span&gt;: 30&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;● 특수 받침&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㄲ/ㄳ/ㄵ/ㄶ/ㄺ/ㄻ/ㄼ/ㄽ/ㄾ/ㄿ/ㅀ/ㅄ/ㅆ 의 겹받침과&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㄷ/ㅈ/ㅊ/ㅋ/ㅌ/ㅍ/ㅎ 의 잘 쓰이지 않는 받침&lt;/span&gt;&lt;/p&gt;&lt;p&gt;+10점&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;● 특수 초성&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㄲ/ㄸ/ㅃ/ㅆ/ㅉ 의 쌍자음과&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ㅋ 의 잘 쓰이지 않는 초성&lt;/span&gt;&lt;/p&gt;&lt;p&gt;+ 7점&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Dialog</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>RuleDestroyed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>358</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>RuleDestroyed()</slot>
+ </slots>
+</ui>
